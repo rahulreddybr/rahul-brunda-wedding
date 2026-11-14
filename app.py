@@ -53,6 +53,12 @@ def health():
     return {"status": "ok", "application": "Rahul & Brunda Wedding Invitation"}, 200
 
 
+@app.get("/healthz")
+def healthz():
+    """Minimal heartbeat endpoint for open invitation pages."""
+    return "OK", 200
+
+
 @app.errorhandler(404)
 def page_not_found(_error):
     """Return a simple branded 404 page without exposing internals."""

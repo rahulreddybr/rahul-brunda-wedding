@@ -252,6 +252,13 @@ function initialiseImageFallbacks() {
   selectAll("img").forEach((image) => image.addEventListener("error", () => { image.classList.add("image-not-ready"); image.setAttribute("aria-hidden", "true"); image.alt = ""; }, { once: true }));
 }
 
+function initialiseHeartbeat() {
+  const heartbeat = () => {
+    fetch("/healthz", { method: "GET", cache: "no-store" }).catch(() => {});
+  };
+  window.setInterval(heartbeat, 240000);
+}
+
 document.addEventListener("DOMContentLoaded", () => {
-  populateEventCards(); initialisePalaceEntrance(); initialiseWeddingCountdown(); initialiseInvitationEnvelope(); initialiseMobileNavigation(); initialiseEventDetails(); initialiseScratchReveal(); initialiseScrollReveals(); initialiseActiveNavigation(); initialiseImageFallbacks();
+  populateEventCards(); initialisePalaceEntrance(); initialiseWeddingCountdown(); initialiseInvitationEnvelope(); initialiseMobileNavigation(); initialiseEventDetails(); initialiseScratchReveal(); initialiseScrollReveals(); initialiseActiveNavigation(); initialiseImageFallbacks(); initialiseHeartbeat();
 });
