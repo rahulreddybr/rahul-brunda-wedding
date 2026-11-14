@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#3b101b">
+  <meta name="description" content="The wedding invitation of Rahul and Brunda — 10 December 2026, Bhimavaram, Andhra Pradesh.">
+  <title>Rahul &amp; Brunda | Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/main.css">
+  <link rel="icon" type="image/x-icon" href="./static/favicon.ico">
+  <script src="./static/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to invitation</a>
+
+  <header class="site-header" id="site-header">
+    <a class="brand-mark" href="#welcome" aria-label="Rahul and Brunda — home">
+      <span class="brand-monogram">R<span>&amp;</span>B</span>
+      <span class="brand-caption">THE WEDDING</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation menu"
+            aria-expanded="false" aria-controls="primary-navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+      <a class="nav-link is-active" href="#welcome">Home</a>
+      <a class="nav-link" href="#our-story">Our Story</a>
+      <a class="nav-link" href="#celebrations">Celebrations</a>
+      <a class="nav-link" href="#little-surprise">A Surprise</a>
+      <a class="nav-link" href="#venue-travel">Venue &amp; Travel</a>
+    </nav>
+    <a class="header-cta" href="#invitation"><span aria-hidden="true">✦</span> The Invitation</a>
+  </header>
+
+  <main id="main-content">
+    <!-- 01: Closed palace doors. main.js will add .doors-open after the guest clicks.
+         The door panels must swing inward, revealing the temple/water/sunset scene. -->
+    <section class="welcome-section" id="welcome" aria-labelledby="welcome-title">
+      <div class="welcome-scene">
+        <picture class="hero-background">
+          <source media="(max-width: 599px)"
+                  srcset="./static/images/hero-mobile.png">
+          <img src="./static/images/temple-water-sunset.webp"
+               alt="Temple reflected in still water at sunset" fetchpriority="high">
+        </picture>
+        <div class="temple-scene-overlay" aria-hidden="true"></div>
+        <div class="welcome-copy">
+          <p class="eyebrow welcome-eyebrow">WITH THE BLESSINGS OF OUR FAMILIES</p>
+          <span class="welcome-flourish" aria-hidden="true">❧</span>
+          <p class="welcome-kicker">The Wedding of</p>
+          <h1 id="welcome-title" class="couple-title">
+            <span class="couple-name couple-name--rahul"><span class="couple-name-inner">Rahul</span></span>
+            <span class="couple-ampersand">&amp;</span>
+            <span class="couple-name couple-name--brunda"><span class="couple-name-inner">Brunda</span></span>
+          </h1>
+          <span class="title-divider" aria-hidden="true"></span>
+          <p class="wedding-date">✧ &nbsp;10 December 2026</p>
+          <p class="wedding-location">⌖ &nbsp;Bhimavaram, Andhra Pradesh</p>
+          <a class="welcome-scroll-cue" href="#invitation">
+            <span>Scroll to discover our invitation</span><span class="scroll-cue-arrow">↓</span>
+          </a>
+        </div>
+
+        <div class="entrance-doors" aria-hidden="true">
+          <div class="door-panel door-panel--left">
+            <img src="./static/images/entrance-door-left.webp"
+                 alt="" class="door-art" fetchpriority="high">
+          </div>
+          <div class="door-panel door-panel--right">
+            <img src="./static/images/entrance-door-right.webp"
+                 alt="" class="door-art" fetchpriority="high">
+          </div>
+          <div class="door-frame door-frame--top"></div>
+          <div class="door-frame door-frame--left"></div>
+          <div class="door-frame door-frame--right"></div>
+          <div class="door-handles">
+            <span class="door-handle door-handle--left"></span>
+            <span class="door-handle door-handle--right"></span>
+          </div>
+        </div>
+        <button class="open-doors-button" id="open-doors" type="button"
+                aria-label="Open the palace doors and reveal the wedding invitation">
+          <span class="open-doors-icon">✧</span>
+          <span class="open-doors-label">Open the doors</span>
+        </button>
+        <span class="entrance-hint">A celebration awaits within</span>
+      </div>
+    </section>
+
+    <section class="countdown-section" aria-labelledby="countdown-title" data-wedding-countdown>
+      <div class="countdown-ornament" aria-hidden="true">❧</div>
+      <p class="eyebrow"></p>
+      <h2 id="countdown-title">THE COUNTDOWN TO FOREVER</h2>
+      <div class="countdown-grid" aria-live="polite" aria-atomic="true">
+        <div class="countdown-unit"><span class="countdown-number" data-countdown-days>000</span><span class="countdown-label">Days</span></div>
+        <div class="countdown-unit"><span class="countdown-number" data-countdown-hours>00</span><span class="countdown-label">Hours</span></div>
+        <div class="countdown-unit"><span class="countdown-number" data-countdown-minutes>00</span><span class="countdown-label">Minutes</span></div>
+        <div class="countdown-unit"><span class="countdown-number" data-countdown-seconds>00</span><span class="countdown-label">Seconds</span></div>
+      </div>
+      <p class="countdown-complete" data-countdown-complete hidden>The Celebration Begins</p>
+    </section>
+
+    <!-- 02: Burgundy invitation envelope with a gold R&B seal. -->
+    <section class="invitation-section parchment-section" id="invitation" aria-labelledby="invitation-title">
+      <div class="section-ornament section-ornament--left" aria-hidden="true"></div>
+      <div class="invitation-layout">
+        <div class="envelope-stage">
+          <button class="invitation-envelope" id="invitation-envelope" type="button"
+                  aria-label="Open the wedding invitation envelope" aria-expanded="false">
+            <span class="envelope-back"></span>
+            <span class="envelope-letter">
+              <span class="letter-monogram">R &amp; B</span>
+              <span class="letter-title">The Wedding Invitation</span>
+              <span class="letter-names">Rahul &amp; Brunda</span>
+              <span class="letter-date">10 December 2026</span>
+            </span>
+            <span class="envelope-flap"></span>
+            <span class="envelope-front"></span>
+            <span class="wax-seal">R<span>&amp;</span>B</span>
+          </button>
+          <article class="invitation-card" id="invitation-card" aria-labelledby="invitation-title" aria-hidden="true">
+            <button class="invitation-card-close" type="button" aria-label="Close the wedding invitation">×</button>
+            <div class="invitation-card-inner">
+              <p class="eyebrow">WITH THE BLESSINGS OF OUR FAMILIES</p>
+              <p class="invitation-card-label">THE WEDDING INVITATION</p>
+              <h2 id="invitation-title">You Are Cordially Invited</h2>
+              <span class="small-gold-divider" aria-hidden="true"></span>
+              <p class="invitation-card-copy">With the blessings of our families, we request the pleasure of your presence at the wedding celebrations of</p>
+              <p class="invitation-card-names">Rahul <span>&amp;</span> Brunda</p>
+              <p class="invitation-card-date">10 December 2026</p>
+              <p class="invitation-card-time">8:00 PM</p>
+              <p class="invitation-card-venue">KOTLA FUNCTION HALL</p>
+              <p class="invitation-card-place">Bhimavaram, Andhra Pradesh</p>
+              <p class="invitation-card-hint">Tap the card or close to seal the invitation</p>
+            </div>
+          </article>
+          <p class="envelope-caption">A personal invitation, sealed with love</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03: Five milestone image slots. CSS should preserve each frame's ratio and crop
+         images with object-fit: cover; never stretch or expand the card to image dimensions. -->
+    <section class="story-section parchment-section" id="our-story" aria-labelledby="story-title">
+      <div class="section-heading">
+        <p class="eyebrow">A JOURNEY WRITTEN TOGETHER</p>
+        <h2 id="story-title">Our Story</h2>
+        <p class="section-subtitle">A journey of friendship, travel, love and a new beginning.</p>
+        <span class="small-gold-divider"></span>
+      </div>
+      <ol class="story-timeline">
+        <li class="story-milestone">
+          <div class="story-photo-frame">
+            <img src="./static/images/story-first-met.webp"
+                 alt="First met — photograph placeholder" class="story-photo" loading="lazy">
+          </div>
+          <span class="milestone-icon">♡</span><h3>First Met</h3>
+          <p class="milestone-year">2016</p>
+          <p class="milestone-description">The beginning of a memorable story.</p>
+        </li>
+        <li class="story-milestone">
+          <div class="story-photo-frame">
+            <img src="./static/images/story-best-friends.webp"
+                 alt="Became best friends — photograph placeholder" class="story-photo" loading="lazy">
+          </div>
+          <span class="milestone-icon">♧</span><h3>Became Best Friends</h3>
+          <p class="milestone-year">2018</p>
+          <p class="milestone-description">A friendship that became extraordinary.</p>
+        </li>
+        <li class="story-milestone">
+          <div class="story-photo-frame">
+            <img src="./static/images/story-travelled-abroad.webp"
+                 alt="Travelled abroad together — photograph placeholder" class="story-photo" loading="lazy">
+          </div>
+          <span class="milestone-icon">✈</span><h3>Travelled Abroad Together</h3>
+          <p class="milestone-year">2020</p>
+          <p class="milestone-description">New places, shared adventures and memories.</p>
+        </li>
+        <li class="story-milestone">
+          <div class="story-photo-frame">
+            <img src="./static/images/story-proposal.webp"
+                 alt="The proposal — photograph placeholder" class="story-photo" loading="lazy">
+          </div>
+          <span class="milestone-icon">♡</span><h3>The Proposal</h3>
+          <p class="milestone-year">2024</p>
+          <p class="milestone-description">A question, a promise and a beautiful yes.</p>
+        </li>
+        <li class="story-milestone">
+          <div class="story-photo-frame">
+            <img src="./static/images/story-big-day.webp"
+                 alt="The big day — photograph placeholder" class="story-photo" loading="lazy">
+          </div>
+          <span class="milestone-icon">✧</span><h3>The Big Day</h3>
+          <p class="milestone-year">10 December 2026</p>
+          <p class="milestone-description">The beginning of forever.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 04: Event image slots have a consistent frame. Add final event date/time/venue
+         in main.js event data or replace the placeholder labels once confirmed. -->
+    <section class="celebrations-section parchment-section" id="celebrations" aria-labelledby="celebrations-title">
+      <div class="section-heading">
+        <p class="eyebrow">JOIN US FOR THE FESTIVITIES</p>
+        <h2 id="celebrations-title">The Celebrations</h2>
+        <p class="section-subtitle">Every gathering, a memory. Every moment, a blessing.</p>
+        <span class="small-gold-divider"></span>
+      </div>
+      <div class="celebration-grid">
+        <article class="celebration-card" data-event="engagement">
+          <div class="celebration-image-frame"><img src="./static/images/event-Engagement.webp" alt="Engagement photograph placeholder" class="celebration-image" loading="lazy"></div>
+          <div class="celebration-card-content"><p class="event-host" data-event-host></p><h3 data-event-title></h3><p class="event-date" data-event-card-date></p><button class="event-details-button" type="button" data-event-open="engagement">View Details <span>→</span></button></div>
+        </article>
+        <article class="celebration-card" data-event="sangeet">
+          <div class="celebration-image-frame"><img src="./static/images/event-sangeet.webp" alt="Sangeet photograph placeholder" class="celebration-image" loading="lazy"></div>
+          <div class="celebration-card-content"><p class="event-host" data-event-host></p><h3 data-event-title></h3><p class="event-date" data-event-card-date></p><button class="event-details-button" type="button" data-event-open="sangeet">View Details <span>→</span></button></div>
+        </article>
+        <article class="celebration-card" data-event="rahul-haldi">
+          <div class="celebration-image-frame"><img src="./static/images/event-rahul-haldi.webp" alt="Rahul's Haldi photograph placeholder" class="celebration-image" loading="lazy"></div>
+          <div class="celebration-card-content"><p class="event-host" data-event-host></p><h3 data-event-title></h3><p class="event-date" data-event-card-date></p><button class="event-details-button" type="button" data-event-open="rahul-haldi">View Details <span>→</span></button></div>
+        </article>
+        <article class="celebration-card" data-event="brunda-haldi">
+          <div class="celebration-image-frame"><img src="./static/images/event-brunda-haldi.webp" alt="Brunda's Haldi photograph placeholder" class="celebration-image" loading="lazy"></div>
+          <div class="celebration-card-content"><p class="event-host" data-event-host></p><h3 data-event-title></h3><p class="event-date" data-event-card-date></p><button class="event-details-button" type="button" data-event-open="brunda-haldi">View Details <span>→</span></button></div>
+        </article>
+        <article class="celebration-card" data-event="wedding">
+          <div class="celebration-image-frame"><img src="./static/images/event-wedding.webp" alt="Wedding ceremony photograph placeholder" class="celebration-image" loading="lazy"></div>
+          <div class="celebration-card-content"><p class="event-host" data-event-host></p><h3 data-event-title></h3><p class="event-date" data-event-card-date></p><button class="event-details-button" type="button" data-event-open="wedding">View Details <span>→</span></button></div>
+        </article>
+        <article class="celebration-card" data-event="reception">
+          <div class="celebration-image-frame"><img src="./static/images/event-reception.webp" alt="Reception photograph placeholder" class="celebration-image" loading="lazy"></div>
+          <div class="celebration-card-content"><p class="event-host" data-event-host></p><h3 data-event-title></h3><p class="event-date" data-event-card-date></p><button class="event-details-button" type="button" data-event-open="reception">View Details <span>→</span></button></div>
+        </article>
+      </div>
+
+      <dialog class="event-dialog" id="event-dialog" aria-labelledby="event-dialog-title">
+        <button class="dialog-close" type="button" aria-label="Close event details">×</button>
+        <p class="eyebrow">YOU ARE WARMLY INVITED</p><h3 id="event-dialog-title">Celebration Details</h3>
+        <dl class="event-information">
+          <div><dt>Date</dt><dd data-event-date>To be announced</dd></div>
+          <div><dt>Time</dt><dd data-event-time>To be announced</dd></div>
+          <div><dt>Venue</dt><dd data-event-venue>To be announced</dd></div>
+          <div data-event-address-row><dt>Address</dt><dd data-event-address>To be announced</dd></div>
+        </dl>
+        <a class="gold-button map-link" data-event-map href="#" target="_blank" rel="noopener">Open in Maps ↗</a>
+      </dialog>
+    </section>
+
+    <section class="surprise-section parchment-section" id="little-surprise" aria-labelledby="surprise-title">
+      <div class="section-heading">
+        <p class="eyebrow">A MOMENT TO UNCOVER</p>
+        <h2 id="surprise-title">A Little Surprise</h2>
+        <p class="section-subtitle">Scratch to reveal a special memory.</p>
+        <span class="small-gold-divider"></span>
+      </div>
+      <div class="scratch-experience" data-scratch-experience>
+        <div class="scratch-frame" data-scratch-frame>
+          <div class="scratch-image-placeholder" aria-hidden="true">A treasured photograph will appear here</div>
+          <img src="./static/images/couple-reveal.webp" alt="A special memory of Rahul and Brunda" class="scratch-photo" data-scratch-photo loading="lazy">
+          <canvas class="scratch-canvas" data-scratch-canvas aria-label="Scratch the surface to reveal a special photograph" role="img"></canvas>
+          <p class="scratch-instruction" data-scratch-instruction>Scratch Here to Reveal</p>
+        </div>
+        <button class="gold-button scratch-reveal-button" type="button" data-scratch-reveal>Reveal Photograph</button>
+        <p class="scratch-status" data-scratch-status aria-live="polite">Use your finger or cursor to uncover the memory.</p>
+      </div>
+    </section>
+
+    <!-- 06: Venue is intentionally near the end. Replace venue name/address and map query
+         when the exact mandapam details are confirmed. -->
+    <section class="venue-section parchment-section" id="venue-travel" aria-labelledby="venue-title">
+      <div class="section-heading">
+        <p class="eyebrow">WE LOOK FORWARD TO WELCOMING YOU</p><h2 id="venue-title">Venue &amp; Travel</h2>
+        <p class="section-subtitle">We would be delighted to celebrate with you in Bhimavaram.</p>
+        <span class="small-gold-divider"></span>
+      </div>
+      <div class="venue-layout">
+        <div class="venue-photo-frame">
+          <img src="./static/images/wedding-venue.webp"
+               alt="Wedding venue photograph placeholder" class="venue-photo" loading="lazy">
+        </div>
+        <div class="venue-details">
+          <span class="venue-pin">⌖</span><p class="eyebrow">WEDDING VENUE</p>
+          <h3>KOTLA FUNCTION HALL</h3>
+          <address>KOTLA FUNCTION HALL<br>Undi Road <br>Bhimavaram, Andhra Pradesh 534199<br>India</address>
+          <a class="gold-button" href="https://www.google.com/maps/search/?api=1&amp;query=Kotla+Function+Hall+Bhimavaram&query_place_id=ChIJU5M-8vYyNjoRDWOxPvJt3bQ"
+             target="_blank" rel="noopener">View on Maps <span>↗</span></a>
+          <p class="venue-note">We look forward to celebrating this special day with you.</p>
+        </div>
+        <div class="venue-map-frame">
+          <iframe
+            src="https://maps.google.com/maps?q=Kotla%20Function%20Hall%2C%20Undi%20Road%2C%20Bhimavaram%2C%20Andhra%20Pradesh%20534199&t=&z=18&ie=UTF8&iwloc=B&output=embed"
+            width="100%"
+            height="450"
+            style="border:0;"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Kotla Function Hall, Bhimavaram, Wedding Venue Map">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 07: Formal closing -->
+  <footer class="closing-section" id="closing">
+    <div class="closing-ornament" aria-hidden="true">❧</div>
+    <p class="eyebrow">WITH THE BLESSINGS OF OUR FAMILIES</p>
+    <h2>You Are Cordially Invited</h2>
+    <p>We would be honoured by your gracious presence</p>
+    <p>as we begin this beautiful new chapter of our lives.</p>
+    <p class="closing-couple">Rahul &amp; Brunda</p>
+    <span class="closing-divider"></span>
+    <p class="closing-thanks">Thank You</p>
+    <p class="closing-date">10 DECEMBER 2026 · BHIMAVARAM</p>
+  </footer>
+</body>
+</html>
